@@ -3,7 +3,7 @@ on: workflow_dispatch
 env:
   AWS_REGION: us-east-1
   ECR_REPOSITORY: raf-vprofile-app
-  EKS_CLUSTER: raf-vpro-eks
+  EKS_CLUSTER: raf-vpro-eks-1
 
 jobs:
   Testing:
