@@ -1,9 +1,9 @@
 name: vprofile actions
 on: workflow_dispatch
 env:
-  AWS_REGION: us-east-2
-  ECR_REPOSITORY: vprofileapp
-  EKS_CLUSTER: vprofile-eks
+  AWS_REGION: us-east-1
+  ECR_REPOSITORY: raf-vprofile-app
+  EKS_CLUSTER: raf-vpro-eks
 
 jobs:
   Testing:
@@ -52,4 +52,3 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_URL }} #OPTIONAL
-       
